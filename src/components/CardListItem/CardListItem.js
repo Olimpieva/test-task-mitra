@@ -6,14 +6,14 @@ import './CardListItem.css';
 
 function CardListItem({ card }) {
 
-    console.log(card)
-
     return (
         <Card className='card-item' >
             <Card.Img className='card-item__image' src={card.url} />
-            <Link to={`/cards/${card.id}`}>
-                <Button className='card-item__button_details'>Details</Button>
-            </Link>
+            <Card.ImgOverlay>
+                <Link to={`/cards/${card.id}`}>
+                    <Button size="sm" className='card-item__button_details'>Подробнее</Button>
+                </Link>
+            </Card.ImgOverlay>
         </Card>
     );
 };

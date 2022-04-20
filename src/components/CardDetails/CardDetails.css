@@ -1,0 +1,9 @@
+.card-details-page__content {
+    padding: 70px 30px 0 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.card-details {
+    width: 30rem;
+}

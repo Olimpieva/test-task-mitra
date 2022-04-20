@@ -12,8 +12,6 @@ function CardList() {
 
     const { data: allCards, loading } = useSelector(allCardsSelector);
 
-    console.log({ allCards })
-
     return (
         <Container className='card-list'>
             <Row xs={4} md={6} className="g-24">

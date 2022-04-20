@@ -26,7 +26,7 @@ class Api {
         }
     };
 
-    getAllCards = () => this._sendRequest(`?albumId=1`, 'GET');
+    getAllCards = () => this._sendRequest(`?_limit=24`, 'GET');
 };
 
 const api = new Api({ url: MAIN_URL });
