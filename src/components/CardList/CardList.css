@@ -1,0 +1,7 @@
+.card-list {
+    padding: 70px 30px;
+}
+
+.card-list__item {
+    padding: .75rem 0;
+}
