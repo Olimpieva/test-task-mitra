@@ -13,15 +13,13 @@ function CardDetails(props) {
     const { id: currentCardId } = useParams();
     const currentCard = useSelector(state => getCardDetails(state, currentCardId));
 
-    console.log({ 111: currentCard })
-
     if (!currentCard) {
         return <Preloader />
     }
 
     return (
         <div className='card-details-page'>
-            <Container className='card-details-page__container'>
+            <Container className='card-details-page__content'>
                 <Card className='card-details'>
                     <Card.Img variant="top" src={currentCard.url} />
                     <Card.Body>
